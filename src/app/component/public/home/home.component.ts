@@ -5,7 +5,7 @@ import { CarteleraComponent } from '../cartelera/cartelera.component';
 
 @Component({
   selector: 'app-home',
-  imports: [HeadComponent,FooterComponent,CarteleraComponent],
+  imports: [HeadComponent,FooterComponent],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
 })

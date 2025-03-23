@@ -1,14 +1,13 @@
 import { Component } from '@angular/core';
 import { HeadComponent } from '../../head/head.component';
 import { FooterComponent } from '../../footer/footer.component';
-import { RouterLink } from '@angular/router';
 
 @Component({
-  selector: 'app-venta',
+  selector: 'app-metodo-pago',
   imports: [HeadComponent,FooterComponent],
-  templateUrl: './venta.component.html',
-  styleUrl: './venta.component.css'
+  templateUrl: './metodo-pago.component.html',
+  styleUrl: './metodo-pago.component.css'
 })
-export class VentaComponent {
+export class MetodoPagoComponent {
 
 }
