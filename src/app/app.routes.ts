@@ -8,7 +8,7 @@ export const routes: Routes = [
         loadChildren: () => import('./auth/features/auth.routes'),
     },
     { 
-        canActivateChild: [publicGuard()],
+       
         path: 'content',
         loadChildren: () => import('./component/public/public.routes'),
     },

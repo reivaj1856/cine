@@ -9,5 +9,9 @@ export default [
         path: 'register',
         loadComponent: () => import('./sign-up/sign-up.component'),
     },
+    {
+        path: '**r',
+        loadComponent: () => import('./sign-in/sign-in.component'),
+    },
 
 ] as Routes;
