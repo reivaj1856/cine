@@ -7,10 +7,11 @@ import { Router } from '@angular/router';
 import { toast } from 'ngx-sonner';
 import { hasEmailError, isRequired } from '../utils/validators';
 import { FormSignIn } from '../../../interface/FormSignIn';
+import { GoogleComponent } from '../../google/google.component';
 
 @Component({
   selector: 'app-sign-in',
-  imports: [ReactiveFormsModule,HeadComponent,FooterComponent],
+  imports: [ReactiveFormsModule,HeadComponent,FooterComponent,GoogleComponent],
   templateUrl: './sign-in.component.html',
   styleUrl: './sign-in.component.css'
 })
@@ -50,5 +51,16 @@ export default class SignInComponent {
           toast.success('cuenta no valida o inexistente');
           console.error('Error during sign up:', error);
         }
+     
       }
+   async submitWithGoogle(){
+    try {
+      await this._authService.signInWhitGoogle();
+      toast.success('Hola, nuevamente');
+      this._router.navigateByUrl('content/media');
+    } catch (error) {
+      toast.success('upds algo salio mal');
+    }
+   }
 }
+
