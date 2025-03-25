@@ -10,7 +10,7 @@ export default [
         loadComponent: () => import('./sign-up/sign-up.component'),
     },
     {
-        path: '**r',
+        path: '**',
         loadComponent: () => import('./sign-in/sign-in.component'),
     },
 

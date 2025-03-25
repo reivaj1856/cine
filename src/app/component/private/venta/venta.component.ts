@@ -5,7 +5,7 @@ import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-venta',
-  imports: [HeadComponent,FooterComponent],
+  imports: [HeadComponent,FooterComponent,RouterLink],
   templateUrl: './venta.component.html',
   styleUrl: './venta.component.css'
 })

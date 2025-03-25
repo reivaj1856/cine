@@ -8,7 +8,6 @@ export const routes: Routes = [
         loadChildren: () => import('./auth/features/auth.routes'),
     },
     { 
-       
         path: 'content',
         loadChildren: () => import('./component/public/public.routes'),
     },
