@@ -3,7 +3,7 @@ import { HeadComponent } from "../../../component/head/head.component";
 import { FooterComponent } from '../../../component/footer/footer.component';
 import { FormBuilder, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
 import { AuthService } from '../../data-access/auth.service';
-import { Router } from '@angular/router';
+import { Router, RouterLink } from '@angular/router';
 import { toast } from 'ngx-sonner';
 import { hasEmailError, isRequired } from '../utils/validators';
 import { FormSignIn } from '../../../interface/FormSignIn';
@@ -11,7 +11,7 @@ import { GoogleComponent } from '../../google/google.component';
 
 @Component({
   selector: 'app-sign-in',
-  imports: [ReactiveFormsModule,HeadComponent,FooterComponent,GoogleComponent],
+  imports: [ReactiveFormsModule,HeadComponent,FooterComponent,GoogleComponent,RouterLink],
   templateUrl: './sign-in.component.html',
   styleUrl: './sign-in.component.css'
 })
